@@ -1,0 +1,151 @@
+header {
+  background-color: yellow;
+  padding: 30px;
+  text-align: center;
+  width: auto;
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  float: left;
+  background-color: white;
+  border: 2px solid black;
+}
+
+header p {
+  font-size: 20px;
+  padding-top: 0px;
+  padding-left: 5%;
+  margin: 0px;
+}
+
+.mainsec {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lavender;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.sec {
+  background-color: white;
+  border: 5px solid black;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.sec h1, h5 {
+  text-align: center;
+}
+
+.img {
+  width: 80%;
+  padding-top: 0%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+footer {
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+@media only screen and (max-width:450px) {
+  .mainsec {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: auto;
+    padding-left: 20px;
+  }
+
+  header {
+    width: auto;
+  }
+
+  footer {
+    width: auto;
+  }
+
+  .sec {
+    background-color: yellow;
+    border: 5px solid black;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .img {
+    width: 80%;
+    border-radius: 20px;
+    padding-top: 2%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width:451px) and (max-width:768px) {
+  .mainsec {
+    border: 5px solid black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+  }
+
+  .sec {
+    background-color: yellow;
+    border: 5px solid black;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .img {
+    width: 80%;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .mainsec {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 15px;
+  }
+}
